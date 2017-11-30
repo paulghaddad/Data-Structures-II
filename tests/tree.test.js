@@ -15,6 +15,7 @@ describe('Tree', () => {
 
   it('should add children to the tree', () => {
     tree.addChild(5);
+    tree.addChild(5);
     expect(tree.children[0].value).toBe(5);
   });
 
