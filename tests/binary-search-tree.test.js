@@ -28,7 +28,11 @@ describe('BinarySearchTree', () => {
     binarySearchTree.insert(2);
     binarySearchTree.insert(3);
     binarySearchTree.insert(7);
+    expect(binarySearchTree.contains(5)).toBe(true);
+    expect(binarySearchTree.contains(2)).toBe(true);
     expect(binarySearchTree.contains(7)).toBe(true);
+    expect(binarySearchTree.contains(3)).toBe(true);
+    expect(binarySearchTree.contains(1)).toBe(false);
     expect(binarySearchTree.contains(8)).toBe(false);
   });
 
